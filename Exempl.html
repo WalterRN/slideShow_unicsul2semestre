@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Abas com CSS3 animada</title>
+    <link rel="stylesheet" href="css/Exempl.css">
+  </head>
+ 
+  <body>
+    <div class="tab">
+      <input type="radio" name="tabs" id="tab1" checked>
+      <label for="tab1">Cronômetro</label>
+ 
+      <input type="radio" name="tabs" id="tab2">
+      <label for="tab2">Slide Show</label>
+ 
+      <input type="radio" name="tabs" id="tab3">
+      <label for="tab3">Tabuada</label>
+ 
+      
+ 
+      <div class="tabs">
+        <div class="content">
+          <h2>Cronônometro</h2>
+          <form name="form_main">
+            <div>
+              <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+            </div>
+          
+            <br />
+          
+            <button type="button" name="start">start</button>
+            <button type="button" name="pause">pause</button>
+            <button type="button" name="reset">reset</button>
+          </form>
+        </div>
+         
+        <div class="content">
+          <h2>Slide Show</h2>
+          <div class="w3-content" style="max-width:200px">
+            <img class="mySlides" src="img/istockphoto-1279840008-170667a.jpg" style="width:100%">
+            <img class="mySlides" src="img/jbCNvTM4gwr2qV8X8fW3ZB-1200-80.png" style="width:100%">
+            <img class="mySlides" src="img/thumb-350-1008904.png" style="width:100%">
+            <img class="mySlides" src="img/thumb-350-1050408.jpg" style="width:100%">
+            <img class="mySlides" src="img/wp1933972.png" style="width:100%">
+          </div>
+          
+          <div class="w3-center">
+            <div class="w3-section">
+              <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+              <button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
+            </div>
+           
+          </div>
+          
+        </div>
+         
+        <div class="content">
+          <p>Digite o Valor que Deseja Calcular Tabuada 0 ao 10</p>
+          <p><input  id="valor">
+            <button type="button" value="Calcular" onclick="calcular()">CALCULAR</button>
+        </p>
+        <div id="resultado">
+        </div>
+         
+      </div>
+    </div>
+    <script src="js/Exempl.js"></script>
+  </body>
+</html>
